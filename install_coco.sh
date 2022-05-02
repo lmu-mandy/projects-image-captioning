@@ -1,3 +1,4 @@
+#This script installs the Coco dataset onto the user's local directory
 #Credit - script mostly written by mkocabas on GitHub
 
 mkdir coco
