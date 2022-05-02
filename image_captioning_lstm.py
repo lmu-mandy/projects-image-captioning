@@ -5,7 +5,7 @@ Date: May 1, 2022
 
 This code is adopted from the Hvass Labs code at: https://github.com/Hvass-Labs/TensorFlow-Tutorials
 
-This code takes the existing Hvass Labs image captioning code and replaces the RNN layers in the decoder model with LSTM layers. The modifications to this code are best demonstrated form lines 660-675 and lines 950 onward.
+This code takes the existing Hvass Labs image captioning code and replaces the RNN layers in the decoder model with LSTM layers. The modifications to this code are best demonstrated form lines 660-675 and lines 945 onward.
 """
 
 # Clone the repository from GitHub to Google Colab's temporary drive.
@@ -23,11 +23,13 @@ os.chdir(work_dir)
 # %matplotlib inline
 import matplotlib.pyplot as plt
 import tensorflow as tf
+import nltk
 import numpy as np
 import sys
 import os
 from PIL import Image
 from cache import cache
+
 
 import coco
 
@@ -941,8 +943,6 @@ generate_caption_coco(idx=1, train=True)
 generate_caption_coco(idx=10, train=True)
 
 """Here is a picture from the validation-set which was not used during training of the model. Sometimes the model can produce good captions for images it hasn't seen during training and sometimes it can't. Can you make a better model?"""
-
-import nltk
 
 def calculate_validation_bleu_score():
   """
