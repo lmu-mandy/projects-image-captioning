@@ -5,7 +5,7 @@ Date: May 1, 2022
 
 This code is adopted from the Hvass Labs code at: https://github.com/Hvass-Labs/TensorFlow-Tutorials
 
-This code takes the existing Hvass Labs image captioning code and replaces the RNN layers in the decoder model with LSTM layers. The modifications to this code are best demonstrated form lines 667-677 and lines 950 onward.
+This code takes the existing Hvass Labs image captioning code and replaces the RNN layers in the decoder model with LSTM layers. The modifications to this code are best demonstrated form lines 660-675 and lines 950 onward.
 """
 
 # Clone the repository from GitHub to Google Colab's temporary drive.
